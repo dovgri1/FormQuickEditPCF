@@ -28,7 +28,7 @@ export const DateField: React.FC<DateFieldProps> = ({
 
   ) : (
     <CustomTextField field={{
-        fiendlyName: label,
+        friendlyName: label,
         key: value,
         editable: false
       }} handleFieldChange={onChange}      

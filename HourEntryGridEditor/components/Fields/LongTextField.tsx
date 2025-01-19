@@ -3,7 +3,7 @@ import { TextField } from "@fluentui/react";
 import { componentStyling } from "../../configuration/configuration";
 
 type Field = {
-  fiendlyName: string;
+  friendlyName: string;
   key: string;
   editable: boolean;
 };
@@ -21,7 +21,7 @@ export const CustomLongTextField: React.FC<CustomFluentInputFieldProps> = ({
 }: CustomFluentInputFieldProps) => {
   return (
 <TextField
-  label={field.fiendlyName}
+  label={field.friendlyName}
   value={value || ""}
   readOnly={!field.editable}
   onChange={(e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, newValue?: string) => 

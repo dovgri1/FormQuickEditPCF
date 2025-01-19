@@ -112,7 +112,7 @@ export const DialogContext: React.FC<IDialogContextProps> = (props) => {
         return (
           <CustomTextField
             field={{
-              fiendlyName: field.fiendlyName,
+              friendlyName: field.friendlyName,
               key: field.key,
               editable: true,
             }}
@@ -124,7 +124,7 @@ export const DialogContext: React.FC<IDialogContextProps> = (props) => {
       case "OptionSet":
         return (
           <OptionSetField
-            label={field.fiendlyName}
+            label={field.friendlyName}
             selectedKey={selectedOption?.Value || null}
             options={
               optionSetValues.map((item: Option) => ({
@@ -144,7 +144,7 @@ export const DialogContext: React.FC<IDialogContextProps> = (props) => {
         return (
           <CustomTextField
             field={{
-              fiendlyName: field.fiendlyName,
+              friendlyName: field.friendlyName,
               key: field.key,
               editable: true,
             }}
@@ -156,7 +156,7 @@ export const DialogContext: React.FC<IDialogContextProps> = (props) => {
       case "Date":
         return (
           <DateField
-            label={field.fiendlyName}
+            label={field.friendlyName}
             value={value}
             editable={field.editable}
             onChange={(newValue) => handleFieldChange(field.key, newValue)}
@@ -168,7 +168,7 @@ export const DialogContext: React.FC<IDialogContextProps> = (props) => {
         return (
           <TextField
             underlined
-            label={field.fiendlyName}
+            label={field.friendlyName}
             value={value ? format(new Date(value), dateTimeFormat) : ""}
             readOnly={!field.editable}
             onChange={(e, newValue) => handleFieldChange(field.key, newValue)}
@@ -178,7 +178,7 @@ export const DialogContext: React.FC<IDialogContextProps> = (props) => {
       case "Boolean":
         return (
           <OptionSetField
-            label={field.fiendlyName}
+            label={field.friendlyName}
             selectedKey={value == true ? 1 : 0} // Initial value
             options={[
               { key: 1, text: field.booleanLabels?.trueLabel != undefined ? field.booleanLabels?.trueLabel : "Yes", }, // Option for true
@@ -197,7 +197,7 @@ export const DialogContext: React.FC<IDialogContextProps> = (props) => {
         return (
           <CustomLongTextField
             field={{
-              fiendlyName: field.fiendlyName,
+              friendlyName: field.friendlyName,
               key: field.key,
               editable: true,
             }}

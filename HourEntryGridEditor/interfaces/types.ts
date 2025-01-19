@@ -226,7 +226,7 @@ export type ColumnDataType =
 	  
 	  export interface IField {
 		key: string;
-		fiendlyName: string;
+		friendlyName: string;
 		fieldType: IFluentUIFieldTypes;
 		editable: boolean;
 		entityLogicalName?: string;

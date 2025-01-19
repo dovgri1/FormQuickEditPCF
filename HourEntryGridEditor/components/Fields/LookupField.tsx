@@ -94,7 +94,7 @@ export const LookupField: React.FC<ILookupFieldProps> = ({
 
   return (
     <ComboBox
-      label={field.fiendlyName}
+      label={field.friendlyName}
       selectedKey={value?.id || null}
       options={dynamicOptions}
       allowFreeform={true}

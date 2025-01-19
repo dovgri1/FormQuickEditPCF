@@ -123,7 +123,7 @@ const TextCellRenderer: React.FC<ITextCellRenderer> = ({ props, col }) => {
       }}
     >
       <IconButton
-        iconProps={{ iconName: "StatusCircleQuestionMark" }}
+        iconProps={{ iconName: componentStyling.columnIconName }}
         className={circularButtonStyle}
         onClick={() => {
           console.log("Icon clicked");

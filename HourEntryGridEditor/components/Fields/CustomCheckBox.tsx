@@ -1,3 +1,5 @@
+// Not used
+
 import * as React from "react";
 import { TextField, ITextFieldProps, ITextFieldStyles } from "@fluentui/react";
 import { componentStyling } from "../../configuration/configuration";
@@ -32,7 +34,7 @@ export const CustomCheckbox: React.FC<CustomCheckboxProps> = ({
       transition: "all 0.3s ease",
       selectors: {
             ":focus-within": {
-              border: "1px solid rgba(0, 120, 212, 0.8)",
+              border: componentStyling.fieldBorderColor,
               boxShadow: "0 0 8px rgba(0, 120, 212, 0.3)",
               outline: "none",
             },
@@ -41,7 +43,7 @@ export const CustomCheckbox: React.FC<CustomCheckboxProps> = ({
                 outline: "none",
               },
         ":hover": {
-          border: "1px solid rgba(0, 120, 212, 0.8)",
+          border: componentStyling.fieldBorderColor,
           boxShadow: "0 0 8px rgba(0, 120, 212, 0.3)",
         },
       },
