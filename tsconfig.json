@@ -1,0 +1,8 @@
+{
+    "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+    "compilerOptions": {
+		"module": "esnext",
+        "sourceMap": true,
+        "typeRoots": ["node_modules/@types"]
+    }
+}
