@@ -76,7 +76,7 @@ export const fieldsArray: IField[] = [
   // },
   {
     key: "dis_checkbox",
-    friendlyName: "True False",
+    friendlyName: "Trustworthy?",
     fieldType: "Boolean",
     editable: true,
     booleanLabels: {trueLabel: "Yes sir!", falseLabel: "No way, Hose!"}
